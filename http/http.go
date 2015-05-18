@@ -13,7 +13,8 @@ import (
 func Ok(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("ok"))
 	// fmt.Println(...)
-	fmt.Printf("from %s , time is %s /n", r.Host, time.Now())
+
+	fmt.Printf("from %s , time is %s \n", r.Host, time.Now())
 }
 
 /*func healthHandler(w http.ResponseWriter, r *http.Request) {

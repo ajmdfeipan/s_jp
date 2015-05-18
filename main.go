@@ -5,11 +5,12 @@ import (
 	"./http"
 	"./rpc"
 	//"flag"
-	"fmt"
+	//"fmt"
 	// "github.com/dinp/server/g"
 	// "github.com/dinp/server/hbs"
 	// "github.com/dinp/server/http"
 	//"os"
+	"log"
 )
 
 func main() {
@@ -26,9 +27,10 @@ func main() {
 
 	// g.InitRedisConnPool()
 	// g.InitDbConnPool()
-	fmt.Println("staring...")
+	log.Println("staring...")
 	go cala.Timeshow()
 
 	go http.Start()
 	rpc.Start()
+	log.Println("rpc srver staring")
 }

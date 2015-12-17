@@ -7,7 +7,7 @@ import (
 
 func Timeshow() {
 	for {
-		time.Sleep(5 * time.Second)
+		time.Sleep(20 * time.Second)
 		fmt.Println(time.Now())
 
 	}
